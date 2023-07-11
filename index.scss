@@ -1,0 +1,132 @@
+body,
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, p, ol, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ol, ul{
+    list-style-type: none;
+}
+
+img{
+    height: auto;
+}
+/* HEADER */
+body{
+    background: rgba(186, 186, 186, 0.573);
+
+    
+    .container{
+        width: 50%;
+        margin: 5% auto;
+        padding: 4rem;
+        background: white;
+        border-radius: 10px;
+        border-bottom-right-radius: 100px;
+
+        .header{
+            form{
+                display: flex;
+                label{
+                    width: 27%;
+                    display: flex;
+                    flex-direction: column;
+                    margin: 1rem;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    font-size: 1rem;
+                    #day-msg{
+                        display: none;
+                        color: red;
+                        text-transform: lowercase;
+                    }
+                    #month-msg{
+                        display: none;
+                        color: red;
+                        text-transform: lowercase;
+                    }
+                    #year-msg{
+                        display: none;
+                        color: red;
+                        text-transform: lowercase;
+                    }
+                    input{
+                        font-size: 2rem;
+                        height: 4rem;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        .line{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            .line-div{
+                background: rgba(165, 165, 165, 0.651);
+                width: 90%;
+                margin: 2rem auto;
+                height: 2px;
+            }
+            a{
+                background: black;
+                border-radius: 100px;
+                height: 44px;
+                width: 46px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    }
+
+    .result{
+        >div{
+            display: flex;
+            p{
+                font-size: 3rem;
+                font-weight: 900;
+                font-family: poppins;
+                font-style: italic;
+            }
+        }
+    }
+}
+}
+
+/* MEDIA QUERY */
+@media (max-width: 768px) {
+body{
+
+    .container{
+        padding: 7rem;
+        width: 65%;
+        margin: 1rem auto;  
+        .header{
+            form{
+                display: flex;
+                label{
+                    width: 30%;
+                    margin: 0.25rem;
+                    font-size: 1rem;
+                    input{
+                        font-size: 2rem;
+                        height: 4rem;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+}
